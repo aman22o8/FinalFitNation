@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Antonio&family=Oswald:wght@200..700&family=Six+Caps&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    background-color: black;
+}
+
+html,
+body {
+    background-color: #000000;
+}
+
+.projectSection {
+    height: 80vh;
+    padding-top: 10vw;
+    width: 100vw;
+    position: relative;
+    padding-bottom: 4vw;
+
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    padding: 0 2vw 2vw;
+
+}
+
+.title p {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 1em;
+    width: 100%;
+    display: inline-block;
+}
+
+.elem {
+    height: 20vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 2vw;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.elem .overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #FB5607;
+    /* top: -100%; */
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.elem:hover .overlay {
+    top: 0;
+    cursor: pointer;
+}
+
+.elem a {
+    font-size: 4vw;
+    font-weight: 600;
+    z-index: 5;
+    padding: 2vw 0;
+
+}
+
+.fixed-image {
+    width: 25vw;
+    height: 30vw;
+    border-radius: 12px;
+    background-color: #fe330a;
+    background-size: cover;
+    background-position: center;
+    /* overflow: hidden; */
+
+}
+
+
+
+.projectSection .nav-link {
+    margin: 3vw;
+}
+
+.class_details {
+
+    opacity: 0;
+    z-index: 40;
+}
+
+.elem .class_details {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.elem:hover .class_details {
+    opacity: 1;
+}
+
+.elem a {
+    padding-left: 0;
+    transition: padding-left 0.4s ease-in-out;
+}
+
+.elem:hover a {
+    padding-left: 20px;
+}
+
+.class_image {
+    background-image: url("https://assets-global.website-files.com/64a9b04469265b578b40676b/64acf47db7f1e27015ce972a_img-bg-classes-new.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* forlanding page */
+.headline_wrapper {
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    top: 32%;
+    width: 105%;
+}
+
+.strength_container {
+    border: 2px solid rgb(0, 0, 0);
+
+}
+
+.myfirstvideo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* from here */
+.myfont1 {
+
+    margin-left: auto;
+    margin-right: 50px;
+    font-family: "Oswald";
+    letter-spacing: -15px;
+    font-size: 16vw;
+    font-weight: 500;
+    color: white;
+}
+
+.myfont {
+    margin-top: -50px;
+    color: white;
+    font-family: "Oswald";
+    margin-left: 55px;
+    letter-spacing: -18px;
+    font-weight: 600;
+    font-size: 20vw;
+
+
+}
+
+/* from here */
+.container_margin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* position:relative; */
+}
+
+.marquee_text {
+    font-family: "Oswald";
+    letter-spacing: -15px;
+    font-size: 16vw;
+    font-weight: 500;
+}
